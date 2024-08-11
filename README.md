@@ -1,11 +1,11 @@
-# TRANSFER-SERVICE DEMO APPLICATION
+# TRANSFER-SERVICE BANKING DEMO APPLICATION
 A Transfer Service API example of a REST-ful WebServer developed using SpringBoot.
 
 ## Requirements
 
 The fully fledged server uses the following:
 
-SpringBoot
+* SpringBoot
 
 ## Dependencies
 * There are a number of third-party dependencies used in the project. 
@@ -16,30 +16,35 @@ You will need:
 
 1. Java JDK 8 or higher
 2. Maven 3.1.1 or higher
+
 Clone the project and use Maven to build the server
 
-`$ mvn clean install`
+```
+$ mvn clean install
+```
 
 ## Details
 
 This application is exposed to two different endpoints.
 
-GET Account details
+Fetch Account details
 
-REST METHOD : POST
-Media Type : JSON (Input & Output)
-* Body
-* accountNumber
-* requestId
-* Transfer funds
+1. REST METHOD : POST
+2. Media Type : JSON (Input & Output)
+3. Body
+    * accountNumber
+    * requestId
 
-REST METHOD : POST
-Media Type : JSON (Input & Output)
-Body
-requestId
-sourceAccountNumber
-destinationAccountNumber
-transferAmount
+  
+Transfer funds
+
+1. REST METHOD : POST
+2. Media Type : JSON (Input & Output)
+3. Body
+    * requestId
+    * sourceAccountNumber
+    * destinationAccountNumber
+    * transferAmount
 
 ## Unit test cases covered
 
